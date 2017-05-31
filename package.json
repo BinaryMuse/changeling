@@ -1,0 +1,21 @@
+{
+  "name": "changeling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Michelle Tilley <michelle@michelletilley.net>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "electron-prebuilt-compile": "^1.6.11"
+  }
+}
