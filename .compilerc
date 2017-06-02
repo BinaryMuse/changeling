@@ -1,0 +1,36 @@
+{
+  "env": {
+    "development": {
+      "application/javascript": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "electron": "1.6"
+              }
+            }
+          ],
+          "react"
+        ],
+        "sourceMaps": "inline"
+      }
+    },
+    "production": {
+      "application/javascript": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "electron": "1.6"
+              }
+            }
+          ],
+          "react"
+        ],
+        "sourceMaps": "none"
+      }
+    }
+  }
+}
