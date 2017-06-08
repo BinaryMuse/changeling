@@ -51,6 +51,7 @@
   "devDependencies": {
     "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.24.1",
+    "electron-forge": "^3.0.3",
     "electron-prebuilt-compile": "1.6.11",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
