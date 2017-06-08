@@ -5,7 +5,7 @@
   "description": "Generate changelogs with pr-changelog",
   "main": "src/main/index.js",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "NODE_ENV=development electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "lint": "eslint src"
@@ -52,6 +52,7 @@
   "devDependencies": {
     "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.24.1",
+    "electron-devtools-installer": "^2.2.0",
     "electron-forge": "^3.0.3",
     "electron-prebuilt-compile": "1.6.11",
     "eslint": "^3.19.0",

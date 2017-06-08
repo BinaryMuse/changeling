@@ -1,5 +1,9 @@
 import { app, BrowserWindow } from 'electron';
 
+if (!process.env.NODE_ENV) {
+  process.env.NODE_ENV = 'production';
+}
+
 let mainWindow;
 const createWindow = () => {
   mainWindow = new BrowserWindow({
@@ -11,7 +15,19 @@ const createWindow = () => {
   mainWindow.on('closed', () => { mainWindow = null; });
 };
 
-app.on('ready', createWindow);
+const installDevTools = () => {
+  const devtools = require('electron-devtools-installer');
+  devtools.default(devtools.REACT_DEVELOPER_TOOLS);
+  devtools.default(devtools.REDUX_DEVTOOLS);
+};
+
+app.on('ready', () => {
+  if (process.env.NODE_ENV === 'development') {
+    installDevTools();
+  }
+  createWindow();
+});
+
 app.on('window-all-closed', () => {
   app.quit();
 });
