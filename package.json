@@ -1,7 +1,7 @@
 {
   "name": "changeling",
   "productName": "changeling",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Generate changelogs with pr-changelog",
   "main": "src/main/index.js",
   "scripts": {
